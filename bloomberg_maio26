@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0e1f33">
+<title>As Novas Regras — Resumo da edição · Abr/Mai 2026</title>
+<meta name="description" content="Resumo editorial da edição Abril/Maio 2026: ordem global, Fed, crédito privado, energia e eleições, terras raras e IA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0e1f33;
+    --ink-2:#16304d;
+    --paper:#f6f1e7;
+    --paper-2:#efe7d6;
+    --gold:#c8932a;
+    --gold-soft:#e8c878;
+    --green:#1f7a5a;
+    --green-soft:#3fa37c;
+    --line:#d7cdba;
+    --muted:#5b5343;
+    --maxw:880px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height:1.6;
+    -webkit-text-size-adjust:100%;
+    text-rendering:optimizeLegibility;
+  }
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px;}
+
+  header.masthead{
+    background:var(--ink);
+    color:var(--paper);
+    padding:48px 0 40px;
+    border-bottom:6px solid var(--gold);
+  }
+  .eyebrow{
+    font-family:'Oswald', 'Arial Narrow', system-ui, sans-serif;
+    text-transform:uppercase;
+    letter-spacing:.22em;
+    font-size:.72rem;
+    font-weight:600;
+    color:var(--gold-soft);
+  }
+  header.masthead .eyebrow{color:var(--gold-soft);}
+  h1.title{
+    font-family:'Oswald', 'Arial Narrow', system-ui, sans-serif;
+    font-weight:700;
+    font-size:clamp(2.6rem, 9vw, 4.6rem);
+    line-height:.98;
+    margin:.25em 0 .15em;
+    letter-spacing:.005em;
+  }
+  .subtitle{
+    font-size:1.02rem;
+    color:#cdd6e0;
+    max-width:46ch;
+    margin:0;
+  }
+  .meta-row{
+    margin-top:22px;
+    display:flex;flex-wrap:wrap;gap:10px 22px;
+    font-family:'Oswald', 'Arial Narrow', system-ui, sans-serif;
+    text-transform:uppercase;letter-spacing:.12em;font-size:.74rem;
+    color:#9fb0c2;
+  }
+
+  nav.toc{
+    background:var(--ink-2);
+    padding:26px 0 30px;
+    border-bottom:1px solid rgba(255,255,255,.08);
+  }
+  nav.toc .eyebrow{color:var(--gold-soft);margin-bottom:14px;display:block;}
+  .toc-grid{
+    list-style:none;margin:0;padding:0;
+    display:grid;grid-template-columns:1fr 1fr;gap:2px 26px;
+  }
+  .toc-grid a{
+    display:flex;gap:12px;align-items:baseline;
+    color:#dce4ee;text-decoration:none;
+    padding:8px 0;border-bottom:1px solid rgba(255,255,255,.06);
+    font-size:.95rem;
+  }
+  .toc-grid a:hover,.toc-grid a:focus{color:#fff;}
+  .toc-grid .n{
+    font-family:'Oswald', 'Arial Narrow', system-ui, sans-serif;
+    color:var(--gold);font-weight:600;font-size:.85rem;min-width:1.6em;
+  }
+
+  main{padding:8px 0 40px;}
+  article.piece{
+    padding:40px 0 34px;
+    border-bottom:1px solid var(--line);
+  }
+  article.piece:last-of-type{border-bottom:0;}
+  .kicker{
+    display:inline-block;
+    font-family:'Oswald', 'Arial Narrow', system-ui, sans-serif;
+    text-transform:uppercase;letter-spacing:.16em;font-size:.7rem;font-weight:600;
+    color:var(--ink);background:var(--gold-soft);
+    padding:4px 10px;border-radius:2px;margin-bottom:14px;
+  }
+  article.piece h2{
+    font-family:'Oswald', 'Arial Narrow', system-ui, sans-serif;
+    font-weight:600;line-height:1.04;
+    font-size:clamp(1.7rem, 5.2vw, 2.5rem);
+    margin:.1em 0 .45em;
+    letter-spacing:.004em;
+  }
+  article.piece h2 .num{
+    color:var(--gold);font-weight:700;margin-right:.35em;
+  }
+  article.piece p{margin:0 0 1em;}
+  article.piece p:last-child{margin-bottom:0;}
+  .lead{font-size:1.06rem;}
+  .takeaway{
+    margin-top:18px;
+    border-left:3px solid var(--green);
+    background:var(--paper-2);
+    padding:12px 16px;border-radius:0 4px 4px 0;
+    font-size:.95rem;color:var(--ink);
+  }
+  .takeaway b{
+    font-family:'Oswald', 'Arial Narrow', system-ui, sans-serif;
+    text-transform:uppercase;letter-spacing:.12em;font-size:.7rem;
+    color:var(--green);display:block;margin-bottom:3px;
+  }
+  .stat{
+    font-family:'Oswald', 'Arial Narrow', system-ui, sans-serif;
+    color:var(--gold);font-weight:600;
+    white-space:nowrap;
+  }
+
+  .section-band{
+    background:var(--ink);color:var(--paper);
+    padding:30px 0;margin-top:8px;
+  }
+  .section-band .eyebrow{color:var(--gold-soft);}
+  .section-band h2{
+    font-family:'Oswald', 'Arial Narrow', system-ui, sans-serif;
+    font-weight:600;font-size:clamp(1.6rem,5vw,2.2rem);
+    margin:.2em 0 .3em;
+  }
+  .section-band p{margin:0;color:#cdd6e0;max-width:60ch;}
+  .mini-list{
+    margin:18px 0 0;padding:0;list-style:none;
+    display:grid;grid-template-columns:1fr;gap:0;
+  }
+  .mini-list li{
+    padding:12px 0;border-top:1px solid rgba(255,255,255,.1);
+    color:#dce4ee;font-size:.95rem;
+  }
+  .mini-list li b{color:#fff;}
+
+  footer{
+    background:var(--ink-2);color:#9fb0c2;
+    padding:30px 0 44px;font-size:.85rem;
+  }
+  footer a{color:var(--gold-soft);}
+  .toplink{
+    display:inline-block;margin-top:10px;
+    font-family:'Oswald', 'Arial Narrow', system-ui, sans-serif;
+    text-transform:uppercase;letter-spacing:.12em;font-size:.74rem;
+    color:var(--gold-soft);text-decoration:none;
+  }
+
+  a:focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-radius:2px;}
+
+  @media (max-width:640px){
+    .toc-grid{grid-template-columns:1fr;}
+    header.masthead{padding:38px 0 32px;}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto;}
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead" id="topo">
+  <div class="wrap">
+    <span class="eyebrow">Edição · Abril / Maio 2026</span>
+    <h1 class="title">As Novas Regras</h1>
+    <p class="subtitle">A velha ordem econômica e institucional está se desfazendo — e várias rupturas acontecem ao mesmo tempo. Um resumo do que mudou e por quê.</p>
+    <div class="meta-row">
+      <span>Macro &amp; Mercados</span>
+      <span>Crédito &amp; Renda Fixa</span>
+      <span>Política &amp; Energia</span>
+      <span>IA &amp; Geopolítica</span>
+    </div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Índice">
+  <div class="wrap">
+    <span class="eyebrow">Nesta edição</span>
+    <ul class="toc-grid">
+      <li><a href="#a1"><span class="n">01</span> O fim da velha ordem global</a></li>
+      <li><a href="#a2"><span class="n">02</span> O Fed na era Warsh</a></li>
+      <li><a href="#a3"><span class="n">03</span> A Wall Street da Índia</a></li>
+      <li><a href="#a4"><span class="n">04</span> Crédito privado: a fila da saída</a></li>
+      <li><a href="#a5"><span class="n">05</span> Pós-graduação e o "faroeste" do crédito</a></li>
+      <li><a href="#a6"><span class="n">06</span> Desregulação: os fiscais silenciados</a></li>
+      <li><a href="#a7"><span class="n">07</span> O retorno de uma estrela caída</a></li>
+      <li><a href="#a8"><span class="n">08</span> Dentro do Terminal (FFM)</a></li>
+      <li><a href="#a9"><span class="n">09</span> Contas de luz decidem eleições</a></li>
+      <li><a href="#a10"><span class="n">10</span> O "Trump do México"</a></li>
+      <li><a href="#a11"><span class="n">11</span> O Estado-portfólio: terras raras</a></li>
+      <li><a href="#a12"><span class="n">12</span> Simon Johnson sobre a IA</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <article class="piece" id="a1">
+    <span class="kicker">Panorama</span>
+    <h2><span class="num">01</span>O fim da velha ordem global</h2>
+    <p class="lead">A aposta de 2025 de que o governo americano sempre recuaria diante de turbulência nos mercados (o "TACO trade") envelheceu mal. A guerra no Irã consolidou uma mudança estrutural: os EUA deixaram de ser tratados como ator previsível, e isso muda tudo na precificação de risco.</p>
+    <p>Por décadas, a ordem global se apoiou numa hierarquia em que os EUA eram o primeiro entre iguais — maior economia, maior poder militar e dono do ativo de reserva do mundo. Com a confiança estratégica em queda, aliados passaram a se proteger: construindo instituições paralelas, testando sistemas de pagamento alternativos e diversificando reservas à margem. Multipolaridade não exige o colapso americano, apenas alternativas críveis.</p>
+    <p>O paradoxo é que, mesmo menos previsível, os EUA seguem atraindo capital. A revolução da IA — intensiva em capital e concentrada nas big techs americanas — reforça a centralidade econômica do país justamente enquanto desestabiliza o resto. O dólar não foi destronado, mas a margem dessa dominância pode encolher. A era que se abre é de apostas hedgeadas.</p>
+    <div class="takeaway"><b>Para levar</b>Confiança institucional virou fator de risco precificável. O choque do petróleo (Brent acima de <span class="stat">US$ 110</span>) e o intervencionismo estatal nos EUA intensificam o realinhamento.</div>
+  </article>
+
+  <article class="piece" id="a2">
+    <span class="kicker">Política monetária</span>
+    <h2><span class="num">02</span>O Fed na era Warsh</h2>
+    <p class="lead">Falcão histórico da inflação, Kevin Warsh — indicado para suceder Powell — passou a soar mais confortável com cortes de juros, desde que o Fed reduza seu balanço. A guinada divide quem o vê como mão estável e quem teme acomodação política.</p>
+    <p>Warsh foi o mais jovem diretor já nomeado ao Fed (2006), com passagem por M&amp;A no Morgan Stanley e anos no conservador Hoover Institution, em Stanford, sob influência de Milton Friedman. O argumento atual: encolher o balanço (hoje acima de <span class="stat">US$ 6,6 tri</span>) abriria espaço para cortar juros sem reacender a inflação, e os ganhos de produtividade da IA justificariam taxas menores. Críticos como Bill Dudley chamam o raciocínio de especulativo.</p>
+    <p>Há ainda a ideia de costurar um novo "Acordo Tesouro-Fed", revisitando o pacto de 1951 — leitura que levanta dúvidas sobre independência, corte de quadro e concentração de poder. A indicação está travada por uma disputa no Senado. Vale lembrar: o presidente do Fed é só um voto entre doze no comitê que define a taxa.</p>
+    <div class="takeaway"><b>Para levar</b>Mesmo um presidente do Fed alinhado precisa convencer o colegiado — e o mercado é o veto final via custo de captação.</div>
+  </article>
+
+  <article class="piece" id="a3">
+    <span class="kicker">Mercados emergentes</span>
+    <h2><span class="num">03</span>A Wall Street da Índia</h2>
+    <p class="lead">Mumbai vive uma transformação imobiliária acelerada. Bancos e gestoras estrangeiros — Barclays, BlackRock, KKR, Morgan Stanley, UBS — ocupam torres de vidro em Worli, antiga vila de pescadores virada endereço da elite.</p>
+    <p>O boom esbarra na realidade de uma ilha onde cerca de um quarto dos 21 milhões de habitantes vive em favelas. Moradores negociam trocar barracos por apartamentos modernos, cedendo terreno a incorporadoras que erguem escritórios e torres de luxo. Aluguéis comerciais em áreas nobres subiram <span class="stat">23%</span> em um ano, contra ~3% em Manhattan.</p>
+    <p>O pano de fundo é o plano do governo de transformar a Índia em mercado desenvolvido até 2047. Mas as tensões são visíveis: famílias que se recusam a sair, promessas de realocação não cumpridas e o risco de aprofundar desigualdades em nome do skyline.</p>
+    <div class="takeaway"><b>Para levar</b>Bilhões em negócios imobiliários dependem da reacomodação de milhões de moradores de baixa renda — o gargalo social do crescimento.</div>
+  </article>
+
+  <article class="piece" id="a4">
+    <span class="kicker">Crédito privado</span>
+    <h2><span class="num">04</span>Crédito privado: a fila da saída</h2>
+    <p class="lead">Investidores de varejo abastados, atraídos por rendimentos perto de <span class="stat">9% a.a.</span>, começaram a perder a fé no crédito privado e a buscar resgates — pressionando os fundos de empréstimo não listados (BDCs).</p>
+    <p>Veículos semilíquidos costumam honrar resgates de até 5% dos ativos por trimestre. Diante da enxurrada de pedidos, gestores como Blue Owl restringiram saques, enquanto BlackRock, HPS, Apollo e Ares mantiveram os limites; na Blackstone, executivos chegaram a usar recursos próprios para ajudar a pagar resgates. O receio extra: carteiras expostas a empresas de software vulneráveis à IA.</p>
+    <p>BDCs negociados em bolsa (como FS KKR e BlackRock TCP) chegaram a operar perto de metade do valor patrimonial — sinal de ansiedade que pode contaminar até os fundos não listados. Assessores passaram a tratar o ativo como nicho, não como bloco de construção da carteira.</p>
+    <div class="takeaway"><b>Para levar</b>É o "dilema do prisioneiro" da iliquidez: limitar saques protege o fundo, mas gera manchete ruim; quem sai primeiro evita a dor.</div>
+  </article>
+
+  <article class="piece" id="a5">
+    <span class="kicker">Crédito ao consumidor</span>
+    <h2><span class="num">05</span>Pós-graduação e o "faroeste" do crédito</h2>
+    <p class="lead">O governo federal americano cortou o financiamento à pós-graduação. Com o fim do GradPlus, o crédito ficou limitado a <span class="stat">US$ 20,5 mil/ano</span> na maioria dos cursos e US$ 50 mil em programas profissionais — e diplomas de licenciatura não entram nessa categoria.</p>
+    <p>A lacuna abre espaço para credores privados (Sallie Mae/SLM, SoFi, fintechs como a Ascent) com juros mais altos e menos proteções ao tomador. A pós-graduação responde por 40% de US$ 1,7 tri em dívida estudantil — fatia crescente.</p>
+    <p>Um relatório do Fed da Filadélfia estima que meio milhão de pós-graduandos podem recorrer ao crédito privado, com US$ 10 bilhões em novos empréstimos triplicando esse mercado. O temor é a volta de práticas predatórias contra famílias mais pobres.</p>
+    <div class="takeaway"><b>Para levar</b>A restrição muda quem consegue cursar pós — e empurra os mais vulneráveis para o subprime educacional.</div>
+  </article>
+
+  <article class="piece" id="a6">
+    <span class="kicker">Regulação</span>
+    <h2><span class="num">06</span>Desregulação: os fiscais silenciados</h2>
+    <p class="lead">A aposta em desregulação ganhou força. Reguladores reverteram o ceticismo com cripto (com nova lei abrindo espaço para stablecoins competirem com bancos por depósitos) e afrouxaram exigências de capital.</p>
+    <p>O quadro encolheu: a SEC perdeu ~18% do pessoal e a CFTC, ~25%. A SEC fala em "era de ouro de coerência regulatória" e decidiu que muitos tokens não são valores mobiliários. A CFTC mira um papel maior em cripto e mercados de previsão. O birô de defesa do consumidor (CFPB) foi esvaziado.</p>
+    <p>Críticos alertam para o velho padrão: afrouxar regras costuma preceder crises. O contra-argumento oficial é que menos burocracia impulsiona crescimento, competitividade e acesso — inclusive abrindo o crédito privado ao investidor de rua.</p>
+    <div class="takeaway"><b>Para levar</b>Normas, não só leis, sustentam a confiança. Quando uma instituição é dobrada uma vez, pode ser dobrada de novo.</div>
+  </article>
+
+  <article class="piece" id="a7">
+    <span class="kicker">Gestão ativa</span>
+    <h2><span class="num">07</span>O retorno de uma estrela caída</h2>
+    <p class="lead">Demitido após apostas que azedaram em China e Rússia, um dos nomes mais conhecidos de mercados emergentes planeja a volta — com um modelo desenhado para fugir das amarras da gestão ativa.</p>
+    <p>O novo veículo, voltado a amigos e família, travaria o capital por 5 a 10 anos, com taxa de administração "mínima" e remuneração atrelada a desempenho. Sem benchmark a perseguir, sem placar trimestral e sem investidores correndo para a saída após um trimestre ruim.</p>
+    <p>A crítica de fundo é à pressão do investimento passivo: comparar-se a um índice empurra decisões para a aparência, não para o negócio subjacente. Já há mais de <span class="stat">US$ 1 bi</span> em compromissos. A tese: "no mercado público, o tempo é a arbitragem definitiva".</p>
+    <div class="takeaway"><b>Para levar</b>Estruturas com lock-up longo dependem de confiança e relação pessoal — raras de executar fora do círculo de "friends &amp; family".</div>
+  </article>
+
+  <div class="section-band" id="a8">
+    <div class="wrap">
+      <span class="eyebrow">Ferramentas &amp; dados</span>
+      <h2>Dentro do Terminal (FFM)</h2>
+      <p>Bloco técnico da edição: como instrumentar, no terminal, os temas que dominam o ano — democracia como fator, dólar, crédito privado e risco geopolítico.</p>
+      <ul class="mini-list">
+        <li><b>O preço econômico da liberdade.</b> Um índice de democracias emergentes superou o benchmark de emergentes em ~67 pontos percentuais em 12 meses. A tese: com o desacoplamento EUA-China e um "modelo de campos", instituições democráticas viraram fator precificado — embora o choque do Irã, que atinge importadores líquidos de energia, tenha derrubado parte do prêmio.</li>
+        <li><b>Os perigos do dólar.</b> O índice do dólar caiu ~8,5% em 12 meses. A análise combina mercados de previsão (Polymarket, Kalshi) e modelos de decomposição de preços para separar choques macro, política monetária e risco geopolítico.</li>
+        <li><b>Raio-X do crédito privado.</b> Conjunto de funções para monitorar BDCs: rentabilidade, recompras de cotas em filings, fluxos de ETFs de empréstimo e risco de inadimplência. O setor opera spreads de ~200 a 280 bps sobre o governo.</li>
+        <li><b>Transparência em Hong Kong.</b> A autoridade monetária passou a publicar preços indicativos de títulos duas vezes ao dia, com 13 formadores de mercado, para destravar valor relativo e rebalanceamento.</li>
+        <li><b>Geopolítica como fator de risco.</b> Um framework de NLP converte manchetes em fatores quantitativos diários (via similaridade de cosseno entre o texto e uma "premissa" de risco). Recentemente, risco financeiro e risco de comércio passaram a correlacionar fortemente.</li>
+        <li><b>Um truque estatístico.</b> O estimador de James-Stein ("encolhimento") mostra como, ao estimar três ou mais médias, encolher os palpites em direção a zero supera a média ingênua — base intuitiva por trás de calibrar correlações de portfólio.</li>
+      </ul>
+    </div>
+  </div>
+
+  <article class="piece" id="a9">
+    <span class="kicker">Energia &amp; política</span>
+    <h2><span class="num">09</span>Contas de luz decidem eleições</h2>
+    <p class="lead">Pela primeira vez, a conta de luz virou tema central de campanha nos EUA. O boom de data centers de IA, somado a tarifas e a uma rede elétrica envelhecida, empurrou os preços a patamares não vistos em décadas.</p>
+    <p>O regulador de confiabilidade prevê alta de <span class="stat">+224 GW</span> na demanda de pico ao longo da década — equivalente a adicionar 180 milhões de casas. Em partes da Pensilvânia, a tarifa subiu cerca de 200% desde 2020, com data centers devendo acrescentar US$ 23 bilhões às contas dos clientes da rede PJM em três anos.</p>
+    <p>O custo se espalha mesmo para quem mora longe dos data centers, porque a infraestrutura é rateada na rede. Em distritos decisivos, a revolta com a conta de luz pode pesar tanto quanto o preço dos alimentos — e republicanos no poder tendem a levar a culpa.</p>
+    <div class="takeaway"><b>Para levar</b>A tensão é universal: como atrair o investimento dos data centers sem irritar eleitores que veem a fatura disparar.</div>
+  </article>
+
+  <article class="piece" id="a10">
+    <span class="kicker">América Latina</span>
+    <h2><span class="num">10</span>O "Trump do México"</h2>
+    <p class="lead">Bilionário dono de varejo, banco e TV (Elektra, Banco Azteca, TV Azteca), Ricardo Salinas Pliego flerta com um desafio à popular presidente Sheinbaum (aprovação ~70%), preenchendo o vácuo deixado pela oposição.</p>
+    <p>Admirador de Trump, Milei e Bukele, ele compartilha o gosto por dívida, evasão fiscal agressiva e táticas jurídicas "de socos" — que renderam reprimendas de juízes nos EUA, em disputas com a AT&amp;T e com detentores de bonds. Em janeiro, fechou acordo de 32 bilhões de pesos (~US$ 1,8 bi) para encerrar uma briga tributária.</p>
+    <p>Sua fortuna caiu mais da metade, para <span class="stat">US$ 6,9 bi</span>, em meio a uma carga pesada de dívidas vencendo e à saída de bolsa de suas empresas listadas. A próxima eleição presidencial é só em 2030, mas ele já se posiciona como a principal voz alternativa ao governo.</p>
+    <div class="takeaway"><b>Para levar</b>Filosofia declarada por quem o acompanha: "se não é proibido, é permitido". Um perfil de risco — político e de crédito.</div>
+  </article>
+
+  <article class="piece" id="a11">
+    <span class="kicker">Estado &amp; mercado</span>
+    <h2><span class="num">11</span>O Estado-portfólio: terras raras</h2>
+    <p class="lead">Contribuintes americanos e o filho mais velho do presidente (via um fundo de capital) acabaram apoiando a mesma startup de ímãs de terras raras — um caso-símbolo do governo virando acionista direto de empresas privadas.</p>
+    <p>A startup, no interior da Carolina do Norte, recebeu um empréstimo federal de mais de US$ 500 milhões, com o Departamento de Comércio ficando com uma fatia de <span class="stat">US$ 50 mi</span>. O pano de fundo é estratégico: a China responde por cerca de 91% dos ímãs de terras raras refinados — insumo de satélites, drones, robótica e defesa.</p>
+    <p>A todos os envolvidos negam conexão entre a decisão pública e o investimento privado. Mas o arranjo incomoda até conservadores: críticos chamam de "socialismo de risco" ou "corporativismo de Estado", alertando que transformar o governo em acionista, sem emergência como em 2008, corrói as normas que sustentam a Constituição econômica.</p>
+    <div class="takeaway"><b>Para levar</b>Se empresas podem cortejar o governo como sócio, abre-se a dúvida de longo prazo: como (e sob qual administração) essas participações serão desfeitas?</div>
+  </article>
+
+  <article class="piece" id="a12">
+    <span class="kicker">Ideias</span>
+    <h2><span class="num">12</span>Simon Johnson sobre a IA</h2>
+    <p class="lead">Para o economista laureado com o Nobel, a IA caminha, na trajetória atual, para "uma perda líquida de bons empregos — empregos com dignidade e bom salário". Não é destino fechado, mas o quadro fica mais sombrio.</p>
+    <p>O exemplo é o carro autônomo: ao contrário de Uber e Lyft, que criaram novas vagas ao desorganizar os táxis, o robotáxi substitui pessoas dirigindo por máquinas, com pouco trabalho humano de retaguarda. O risco não é desemprego em massa, e sim o esmagamento do meio — uma economia "em K". E os jovens orientados a "aprender a programar" agora ouvem que ferramentas de IA codam melhor que eles.</p>
+    <p>A saída proposta passa por redirecionar a tecnologia para o trabalhador, repensar um código tributário que hoje favorece máquinas em vez de gente, e debater agora — não depois que os hábitos já estiverem formados, como ocorreu com as redes sociais. A comparação é com eletricidade e ferrovias, mas distribuída sobre o "trilho digital", muito mais rápido.</p>
+    <div class="takeaway"><b>Para levar</b>"Não somos luditas." O ponto não é frear a tecnologia, e sim moldar instituições e impostos para que os ganhos sejam compartilhados.</div>
+  </article>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Resumo editorial preparado para leitura rápida. Cifras e dados refletem o conteúdo da edição de Abril/Maio 2026.</p>
+    <a class="toplink" href="#topo">↑ Voltar ao topo</a>
+  </div>
+</footer>
+
+</body>
+</html>
